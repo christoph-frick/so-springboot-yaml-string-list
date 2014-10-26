@@ -1,0 +1,16 @@
+buildscript {
+        repositories.jcenter()
+        dependencies {
+                classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.1.8.RELEASE'
+        }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'spring-boot'
+
+repositories.jcenter()
+
+dependencies {
+        compile 'org.codehaus.groovy:groovy-all:2.3.+'
+        compile("org.springframework.boot:spring-boot-starter")
+}
